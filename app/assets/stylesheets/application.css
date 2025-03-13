@@ -1,0 +1,110 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ /* General Page Styling */
+/* General Page Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #e3f2fd;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Page Header */
+h1 {
+  text-align: center;
+  color: #1a237e;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Container for Customer Cards */
+.customer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Individual Customer Card */
+.customer-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  width: 260px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.customer-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* Customer Image */
+.customer-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+/* Customer Name */
+.customer-card h3 {
+  margin: 12px 0;
+  color: #1a237e;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Customer Province */
+.customer-card p {
+  margin: 5px 0;
+  color: #4a4a4a;
+  font-size: 15px;
+}
+
+.customer-card strong {
+  color: #1a237e;
+}
+
+/* Links for Filtering */
+.links {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.links a {
+  display: inline-block;
+  margin: 6px;
+  padding: 10px 18px;
+  text-decoration: none;
+  color: white;
+  background: #ff6f61;
+  border-radius: 6px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.links a:hover {
+  background: #d84315;
+  transform: scale(1.05);
+}
